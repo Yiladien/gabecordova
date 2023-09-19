@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gabecordova/static/css/main.8e8bae16.css",
-    "main.js": "/gabecordova/static/js/main.de3d657c.js",
-    "static/js/787.739ccc21.chunk.js": "/gabecordova/static/js/787.739ccc21.chunk.js",
-    "index.html": "/gabecordova/index.html",
-    "main.8e8bae16.css.map": "/gabecordova/static/css/main.8e8bae16.css.map",
-    "main.de3d657c.js.map": "/gabecordova/static/js/main.de3d657c.js.map",
-    "787.739ccc21.chunk.js.map": "/gabecordova/static/js/787.739ccc21.chunk.js.map"
+    "main.css": "/static/css/main.cf24040d.css",
+    "main.js": "/static/js/main.fa91c07e.js",
+    "static/js/787.739ccc21.chunk.js": "/static/js/787.739ccc21.chunk.js",
+    "index.html": "/index.html",
+    "main.cf24040d.css.map": "/static/css/main.cf24040d.css.map",
+    "main.fa91c07e.js.map": "/static/js/main.fa91c07e.js.map",
+    "787.739ccc21.chunk.js.map": "/static/js/787.739ccc21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e8bae16.css",
-    "static/js/main.de3d657c.js"
+    "static/css/main.cf24040d.css",
+    "static/js/main.fa91c07e.js"
   ]
 }
