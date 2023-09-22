@@ -18,7 +18,7 @@ function MainNavbar() {
         className="border-bottom border-secondary py-3"
       >
         <Container>
-          <Nav className="m-auto column-gap-3">
+          <Nav className="m-auto gap-2 gap-sm-5">
             <Nav.Link href="/">About</Nav.Link>
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/" className="p-1">
