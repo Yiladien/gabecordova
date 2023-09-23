@@ -1,6 +1,8 @@
 //react
 import React from "react";
 
+import { NavLink } from "react-router-dom";
+
 //bootstrap
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -19,17 +21,21 @@ function MainNavbar() {
       >
         <Container>
           <Nav className="m-auto gap-2 gap-sm-5">
-            <Nav.Link href="/">About</Nav.Link>
-            <Nav.Link href="/projects">Projects</Nav.Link>
-            <Nav.Link href="/" className="p-1">
+            <Nav.Link as={NavLink} to="/" exact activeClassName="active">
+              About
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/projects" activeClassName="active">
+              Projects
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/" exact className="p-1">
               <div className="position-relative">
                 <div className="position-absolute top-50 start-50 translate-middle">
                   <img
                     alt="gabecordova.dev logo"
                     src={`logo.svg`}
-                    width="50"
-                    height="50"
-                    className="d-inline-block align-top"
+                    width="55"
+                    height="55"
+                    className="d-inline-block align-top svg-button"
                     title="gabecordova.dev"
                   />
                 </div>
@@ -43,8 +49,12 @@ function MainNavbar() {
               </div>
               {/* <span>Gabe Cordova</span> */}
             </Nav.Link>
-            <Nav.Link href="/resume">Resume</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link as={NavLink} to="/resume" activeClassName="active">
+              Resume
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/contact" activeClassName="active">
+              Contact
+            </Nav.Link>
           </Nav>
           {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav"></Navbar.Collapse> */}

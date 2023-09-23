@@ -1,6 +1,8 @@
 //react
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 //bootstrap
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -40,7 +42,12 @@ function Footer() {
             >
               <Linkedin className="fs-3" />
             </Nav.Link>
-            <Nav.Link href="/" title="gabecordova.dev" className="text-center">
+            <Nav.Link
+              as={Link}
+              to="/"
+              title="gabecordova.dev"
+              className="text-center"
+            >
               <div>Gabe Cordova</div>
               <div>www.gabecordova.dev</div>
             </Nav.Link>
