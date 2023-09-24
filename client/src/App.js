@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // pages imports
 import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 
@@ -34,7 +34,7 @@ function App() {
               <Col xxl={6} lg={8} md={10} sm={12}>
                 <Routes>
                   <Route exact path="/" element={<About />} />
-                  <Route exact path="/projects" element={<Projects />} />
+                  <Route exact path="/portfolio" element={<Portfolio />} />
                   <Route exact path="/resume" element={<Resume />} />
                   <Route exact path="/contact" element={<Contact />} />
                 </Routes>

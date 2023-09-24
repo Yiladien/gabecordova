@@ -24,8 +24,8 @@ function MainNavbar() {
             <Nav.Link as={NavLink} to="/" exact activeClassName="active">
               About
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/projects" activeClassName="active">
-              Projects
+            <Nav.Link as={NavLink} to="/portfolio" activeClassName="active">
+              Portfolio
             </Nav.Link>
             <Nav.Link as={NavLink} to="/" exact className="p-1">
               <div className="position-relative">

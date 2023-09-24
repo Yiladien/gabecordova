@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <Container
-        className="bg-dark py-2"
+        className="about-card py-2 rounded mt-3"
         // style={{
         //   boxShadow: "inset 0px 0px 0px 1px white",
         // }}
