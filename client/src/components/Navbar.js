@@ -19,8 +19,8 @@ function MainNavbar() {
         bg="dark"
         className="border-bottom border-secondary py-3"
       >
-        <Container>
-          <Nav className="m-auto gap-2 gap-sm-5">
+        <Container className="justify-content-center">
+          <Nav className="gap-2 gap-sm-5">
             <Nav.Link as={NavLink} to="/" exact activeClassName="active">
               About
             </Nav.Link>
@@ -28,7 +28,7 @@ function MainNavbar() {
               Portfolio
             </Nav.Link>
             <Nav.Link as={NavLink} to="/" exact className="p-1">
-              <div className="position-relative">
+              <div className="position-relative mx-3">
                 <div className="position-absolute top-50 start-50 translate-middle">
                   <img
                     alt="gabecordova.dev logo"

@@ -1,12 +1,8 @@
 //react
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 //bootstrap
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
@@ -28,47 +24,49 @@ function Footer() {
         bg="dark"
         className="border-top border-secondary"
       >
-        <Container>
-          <a
-            href="https://github.com/Yiladien"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link-secondary"
-          >
-            <Github className="fs-3 svg-button" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/gabriel-cordova314"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link-secondary"
-          >
-            <Linkedin className="fs-3 svg-button" />
-          </a>
-          <a
-            href="/"
-            title="gabecordova.dev"
-            className="text-center link-secondary link-underline link-underline-opacity-0"
-          >
-            <div>Gabe Cordova</div>
-            <div>www.gabecordova.dev</div>
-          </a>
-          <a
-            href="https://stackoverflow.com/users/18272025/gabriel-cordova"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link-secondary"
-          >
-            <StackOverflow className="fs-3 svg-button" />
-          </a>
-          <a
-            href="tel: 9492752831"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link-secondary"
-          >
-            <TelephoneFill className="fs-3 svg-button" />
-          </a>
+        <Container className="justify-content-center">
+          <Nav className="gap-4 gap-sm-5 align-items-center">
+            <a
+              href="https://github.com/Yiladien"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-secondary mx-2"
+            >
+              <Github className="fs-3 svg-button" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gabriel-cordova314"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-secondary mx-2"
+            >
+              <Linkedin className="fs-3 svg-button" />
+            </a>
+            <a
+              href="/"
+              title="gabecordova.dev"
+              className="text-center link-secondary link-underline link-underline-opacity-0 mx-0 mx-sm-2"
+            >
+              <div>Gabe Cordova</div>
+              <div>www.gabecordova.dev</div>
+            </a>
+            <a
+              href="https://stackoverflow.com/users/18272025/gabriel-cordova"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-secondary mx-2"
+            >
+              <StackOverflow className="fs-3 svg-button" />
+            </a>
+            <a
+              href="tel: 9492752831"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-secondary mx-2"
+            >
+              <TelephoneFill className="fs-3 svg-button" />
+            </a>
+          </Nav>
         </Container>
       </Navbar>
       {/* <Navbar

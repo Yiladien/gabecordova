@@ -23,7 +23,7 @@ function App() {
     <Router>
       <div className="bg-dark min-vh-100 pt-5 pb-5">
         <Navbar />
-        <div className="pt-4 pb-2">
+        <div className="pt-4 pb-4">
           <Container
             fluid
             // style={{
