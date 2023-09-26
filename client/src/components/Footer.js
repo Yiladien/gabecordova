@@ -10,10 +10,14 @@ import {
   Github,
   Linkedin,
   StackOverflow,
-  TelephoneFill,
+  EnvelopeFill,
 } from "react-bootstrap-icons";
 
 function Footer() {
+  const email = "gcordova9918@gmail.com";
+  const subject = "Hello";
+  const body = "Hi there!";
+
   return (
     <>
       <Navbar
@@ -31,6 +35,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               class="link-secondary mx-2"
+              title="Github"
             >
               <Github className="fs-3 svg-button" />
             </a>
@@ -39,6 +44,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               class="link-secondary mx-2"
+              title="LinkedIn"
             >
               <Linkedin className="fs-3 svg-button" />
             </a>
@@ -55,16 +61,18 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               class="link-secondary mx-2"
+              title="StackOverflow"
             >
               <StackOverflow className="fs-3 svg-button" />
             </a>
             <a
-              href="tel: 9492752831"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`mailto:${email}?subject=${encodeURIComponent(
+                subject
+              )}&body=${encodeURIComponent(body)}`}
               class="link-secondary mx-2"
+              title="Email Me"
             >
-              <TelephoneFill className="fs-3 svg-button" />
+              <EnvelopeFill className="fs-3 svg-button" />
             </a>
           </Nav>
         </Container>
