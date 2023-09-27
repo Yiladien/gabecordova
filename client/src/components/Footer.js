@@ -21,58 +21,70 @@ function Footer() {
   return (
     <>
       <Navbar
-        id="mainNavbar"
+        id="footer-nav"
         expand={true}
-        fixed="bottom"
+        // fixed="bottom"
         data-bs-theme="dark"
         bg="dark"
         className="border-top border-secondary"
       >
         <Container className="justify-content-center">
-          <Nav className="gap-4 gap-sm-5 align-items-center">
+          <Nav className="align-items-center flex-column flex-sm-row">
+            <a
+              href="/"
+              title="gabecordova.dev"
+              className="text-center link-secondary link-underline link-underline-opacity-0 d-sm-none"
+            >
+              <h2>
+                <b>Gabe Cordova</b>
+              </h2>
+              <div>www.gabecordova.dev</div>
+            </a>
             <a
               href="https://github.com/Yiladien"
               target="_blank"
               rel="noopener noreferrer"
-              class="link-secondary mx-2"
+              className="link-secondary mx-2"
               title="Github"
             >
-              <Github className="fs-3 svg-button" />
+              <Github className="svg-button" />
             </a>
             <a
               href="https://www.linkedin.com/in/gabriel-cordova314"
               target="_blank"
               rel="noopener noreferrer"
-              class="link-secondary mx-2"
+              className="link-secondary mx-2"
               title="LinkedIn"
             >
-              <Linkedin className="fs-3 svg-button" />
+              <Linkedin className="svg-button" />
             </a>
             <a
               href="/"
               title="gabecordova.dev"
-              className="text-center link-secondary link-underline link-underline-opacity-0 mx-0 mx-sm-2"
+              className="text-center link-secondary link-underline link-underline-opacity-0 mx-0 mx-sm-2 d-none d-sm-block"
             >
-              <div>Gabe Cordova</div>
+              <div>
+                <b>Gabe Cordova</b>
+              </div>
               <div>www.gabecordova.dev</div>
             </a>
             <a
               href="https://stackoverflow.com/users/18272025/gabriel-cordova"
               target="_blank"
               rel="noopener noreferrer"
-              class="link-secondary mx-2"
+              className="link-secondary mx-2"
               title="StackOverflow"
             >
-              <StackOverflow className="fs-3 svg-button" />
+              <StackOverflow className="svg-button" />
             </a>
             <a
               href={`mailto:${email}?subject=${encodeURIComponent(
                 subject
               )}&body=${encodeURIComponent(body)}`}
-              class="link-secondary mx-2"
+              className="link-secondary mx-2"
               title="Email Me"
             >
-              <EnvelopeFill className="fs-3 svg-button" />
+              <EnvelopeFill className="svg-button" />
             </a>
           </Nav>
         </Container>

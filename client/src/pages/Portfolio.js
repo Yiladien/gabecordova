@@ -3,14 +3,14 @@ import React from "react";
 //bootstrap
 import { Container } from "react-bootstrap";
 
-const Projects = () => {
+const Portfolio = () => {
   return (
     <>
       <Container className="bg-dark py-2">
-        <h4 className="text-light">Projects</h4>
+        <h4 className="text-light">Portfolio</h4>
       </Container>
     </>
   );
 };
 
-export default Projects;
+export default Portfolio;

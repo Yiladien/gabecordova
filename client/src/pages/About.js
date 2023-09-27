@@ -18,7 +18,7 @@ const About = () => {
         //   boxShadow: "inset 0px 0px 0px 1px white",
         // }}
       >
-        <Card bg="secondary" text="white">
+        <Card bg="secondary" text="white" className="border-0">
           <Card.Header
             //  className="bg-secondary"
             className="about-card-header"
