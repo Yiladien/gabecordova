@@ -143,10 +143,10 @@ function MainNavbar() {
           ) : null}
           {!navbarCollapsed ? (
             <Nav className="gap-2 gap-sm-5">
-              <Nav.Link as={NavLink} to="/" activeClassName="active">
+              <Nav.Link as={NavLink} to="/" activeclassname="active">
                 About
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/portfolio" activeClassName="active">
+              <Nav.Link as={NavLink} to="/portfolio" activeclassname="active">
                 Portfolio
               </Nav.Link>
               <Nav.Link as={NavLink} to="/" className="p-1">
@@ -170,10 +170,10 @@ function MainNavbar() {
                   />
                 </div>
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/resume" activeClassName="active">
+              <Nav.Link as={NavLink} to="/resume" activeclassname="active">
                 Resume
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/contact" activeClassName="active">
+              <Nav.Link as={NavLink} to="/contact" activeclassname="active">
                 Contact
               </Nav.Link>
             </Nav>
