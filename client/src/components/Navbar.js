@@ -61,7 +61,7 @@ function MainNavbar() {
         >
           {navbarCollapsed ? (
             <Navbar.Brand>
-              <Nav.Link as={NavLink} to="/" className="p-1">
+              <Nav.Link as={NavLink} to="/" className="p-1 focus-ring">
                 <div className="position-relative mx-3">
                   <div className="position-absolute top-50 start-50 translate-middle">
                     <img
@@ -84,7 +84,7 @@ function MainNavbar() {
               </Nav.Link>
             </Navbar.Brand>
           ) : null}
-          <Navbar.Toggle ref={navbarToggleRef} />
+          <Navbar.Toggle ref={navbarToggleRef} className="focus-ring" />
           {navbarCollapsed ? (
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-lg`}
@@ -95,7 +95,7 @@ function MainNavbar() {
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
                   <Navbar.Brand>
-                    <Nav.Link as={NavLink} to="/" className="p-1">
+                    <Nav.Link as={NavLink} to="/" className="p-1 focus-ring">
                       <div className="position-relative mx-3">
                         <div className="position-absolute top-50 start-50 translate-middle">
                           <img
@@ -121,20 +121,36 @@ function MainNavbar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link as={NavLink} to="/" activeClassName="active">
+                  <Nav.Link
+                    as={NavLink}
+                    to="/"
+                    activeclassname="active"
+                    className="focus-ring"
+                  >
                     About
                   </Nav.Link>
                   <Nav.Link
                     as={NavLink}
                     to="/portfolio"
-                    activeClassName="active"
+                    activeclassname="active"
+                    className="focus-ring"
                   >
                     Portfolio
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/resume" activeClassName="active">
+                  <Nav.Link
+                    as={NavLink}
+                    to="/resume"
+                    activeclassname="active"
+                    className="focus-ring"
+                  >
                     Resume
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/contact" activeClassName="active">
+                  <Nav.Link
+                    as={NavLink}
+                    to="/contact"
+                    activeclassname="active"
+                    className="focus-ring"
+                  >
                     Contact
                   </Nav.Link>
                 </Nav>
@@ -143,13 +159,23 @@ function MainNavbar() {
           ) : null}
           {!navbarCollapsed ? (
             <Nav className="gap-2 gap-sm-5">
-              <Nav.Link as={NavLink} to="/" activeclassname="active">
+              <Nav.Link
+                as={NavLink}
+                to="/"
+                activeclassname="active"
+                className="focus-ring"
+              >
                 About
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/portfolio" activeclassname="active">
+              <Nav.Link
+                as={NavLink}
+                to="/portfolio"
+                activeclassname="active"
+                className="focus-ring"
+              >
                 Portfolio
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/" className="p-1">
+              <Nav.Link as={NavLink} to="/" className="p-1 focus-ring">
                 <div className="position-relative mx-3">
                   <div className="position-absolute top-50 start-50 translate-middle">
                     <img
@@ -170,10 +196,20 @@ function MainNavbar() {
                   />
                 </div>
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/resume" activeclassname="active">
+              <Nav.Link
+                as={NavLink}
+                to="/resume"
+                activeclassname="active"
+                className="focus-ring"
+              >
                 Resume
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/contact" activeclassname="active">
+              <Nav.Link
+                as={NavLink}
+                to="/contact"
+                activeclassname="active"
+                className="focus-ring"
+              >
                 Contact
               </Nav.Link>
             </Nav>

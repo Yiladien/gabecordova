@@ -33,7 +33,7 @@ function Footer() {
             <a
               href="/"
               title="gabecordova.dev"
-              className="text-center link-secondary link-underline link-underline-opacity-0 d-sm-none"
+              className="text-center link-secondary link-underline link-underline-opacity-0 d-sm-none focus-ring"
             >
               <h2>
                 <b>Gabe Cordova</b>
@@ -44,7 +44,7 @@ function Footer() {
               href="https://github.com/Yiladien"
               target="_blank"
               rel="noopener noreferrer"
-              className="link-secondary mx-2"
+              className="link-secondary mx-2 focus-ring"
               title="Github"
             >
               <Github className="svg-button" />
@@ -53,7 +53,7 @@ function Footer() {
               href="https://www.linkedin.com/in/gabriel-cordova314"
               target="_blank"
               rel="noopener noreferrer"
-              className="link-secondary mx-2"
+              className="link-secondary mx-2 focus-ring"
               title="LinkedIn"
             >
               <Linkedin className="svg-button" />
@@ -61,7 +61,7 @@ function Footer() {
             <a
               href="/"
               title="gabecordova.dev"
-              className="text-center link-secondary link-underline link-underline-opacity-0 mx-0 mx-sm-2 d-none d-sm-block"
+              className="text-center link-secondary link-underline link-underline-opacity-0 mx-0 mx-sm-2 d-none d-sm-block focus-ring"
             >
               <div>
                 <b>Gabe Cordova</b>
@@ -72,7 +72,7 @@ function Footer() {
               href="https://stackoverflow.com/users/18272025/gabriel-cordova"
               target="_blank"
               rel="noopener noreferrer"
-              className="link-secondary mx-2"
+              className="link-secondary mx-2 focus-ring"
               title="StackOverflow"
             >
               <StackOverflow className="svg-button" />
@@ -81,7 +81,7 @@ function Footer() {
               href={`mailto:${email}?subject=${encodeURIComponent(
                 subject
               )}&body=${encodeURIComponent(body)}`}
-              className="link-secondary mx-2"
+              className="link-secondary mx-2 focus-ring"
               title="Email Me"
             >
               <EnvelopeFill className="svg-button" />
