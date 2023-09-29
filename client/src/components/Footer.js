@@ -23,7 +23,10 @@ function Footer() {
       <Navbar
         id="footer-nav"
         expand={true}
+        //
+        // opted to use css media query to change fixed to relative footer dynamically
         // fixed="bottom"
+        //
         data-bs-theme="dark"
         bg="dark"
         className="border-top border-secondary"
@@ -89,56 +92,6 @@ function Footer() {
           </Nav>
         </Container>
       </Navbar>
-      {/* <Navbar
-        id="mainNavbar"
-        expand={true}
-        fixed="bottom"
-        data-bs-theme="dark"
-        bg="dark"
-        className="border-top border-secondary"
-      >
-        <Container>
-          <Nav className="m-auto gap-2 gap-sm-5 align-items-center">
-            <Nav.Link
-              href="https://github.com/Yiladien"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github className="fs-3 svg-button" />
-            </Nav.Link>
-            <Nav.Link
-              href="www.linkedin.com/in/gabriel-cordova314"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin className="fs-3" />
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/"
-              title="gabecordova.dev"
-              className="text-center"
-            >
-              <div>Gabe Cordova</div>
-              <div>www.gabecordova.dev</div>
-            </Nav.Link>
-            <Nav.Link
-              href="https://stackoverflow.com/users/18272025/gabriel-cordova"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <StackOverflow className="fs-3" />
-            </Nav.Link>
-            <Nav.Link
-              href="tel: 9492752831"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <TelephoneFill className="fs-3" />
-            </Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar> */}
     </>
   );
 }

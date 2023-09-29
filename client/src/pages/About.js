@@ -39,7 +39,7 @@ const About = () => {
               </Col>
               <Col>
                 <h1>Gabe Cordova</h1>
-                <h4>Full Stack Web Developer</h4>
+                <h4 className="fst-italic">Full Stack Web Developer</h4>
               </Col>
             </Row>
           </Card.Header>

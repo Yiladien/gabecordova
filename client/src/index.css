@@ -85,6 +85,10 @@ code {
   }
 }
 
+#footer-nav {
+  position: relative;
+}
+
 #footer-nav .navbar-nav {
   gap: 3rem;
   padding-top: 1.5rem;
@@ -95,10 +99,19 @@ code {
 }
 
 @media (min-width: 576px) {
+  #footer-nav {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
   #footer-nav .navbar-nav {
     gap: 3rem;
     padding-top: 0rem;
   }
+
   #footer-nav svg {
     font-size: calc(1.3rem + 0.6vw);
   }
