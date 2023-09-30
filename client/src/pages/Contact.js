@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <>
       <Container
-        className="py-2 rounded mt-2"
+        className="py-2 mt-2"
         // style={{
         //   boxShadow: "inset 0px 0px 0px 1px white",
         // }}
@@ -28,7 +28,7 @@ const Contact = () => {
                 Let's{" "}
                 <TextRotation
                   // required prop: textList as []
-                  // optional prop: inType, outType, inDuration, outDuration, intervalTime
+                  // optional props: inType, outType, inDuration, outDuration, intervalTime
                   textList={[
                     "Connect",
                     "Chat",
@@ -37,10 +37,10 @@ const Contact = () => {
                     "Innovate",
                     "Create",
                   ]}
-                  // in types: rotateInY, rotateInX, rotateInZ
-                  // out types: rotateOutY, rotateOutX, rotateOutZ
-                  inType="rotateInX"
-                  outType="rotateOutX"
+                  // in types: rotateInY, rotateInX, rotateInZ, jelloIn, slideInLeft, slideInRight, slideInUp, slideInDown
+                  // out types: rotateOutY, rotateOutX, rotateOutZ, jelloOut, slideOutLeft, slideOutRight, slideOutUp, slideOutDown
+                  inType="slideInDown"
+                  outType="slideOutRight"
                 />
               </h2>
               <h4>

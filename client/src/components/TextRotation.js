@@ -12,8 +12,12 @@ const TextRotation = ({
   const [text, setText] = useState(textList[currentIndex]);
   const [animationClass, setAnimationClass] = useState(inType);
 
+  //   console.log(animationClass);
+
   useEffect(() => {
     const interval = setInterval(() => {
+      //   setAnimationClass(outType === "jelloIn" ? "jelloOut" : outType);
+
       setAnimationClass(outType);
 
       setTimeout(() => {
@@ -91,6 +95,85 @@ const TextRotation = ({
             }
         }
 
+        @keyframes slideInLeft {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+        
+        @keyframes slideOutLeft {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        
+        @keyframes slideOutRight {
+            from { transform: translateX(0); }
+            to { transform: translateX(100%); }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        
+        @keyframes slideOutUp {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100%); }
+        }
+
+        @keyframes slideInDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        
+        @keyframes slideOutDown {
+            from { transform: translateY(0); }
+            to { transform: translateY(100%); }
+        }
+
+        @keyframes jelloIn {
+            0%, 100% { transform: scale(1, 1) }
+            5%, 95% { transform: scale(1.25, 0.75); }
+            10%, 90% { transform: scale(0.75, 1.25); }
+            20%, 80% { transform: scale(1.15, 0.85); }
+            30%, 70%, 40%, 60% { transform: scale(0.95, 1.05); }
+            50% { transform: scale(1.05, 0.95); }
+        }
+
+        @keyframes jelloOut {
+            0% { 
+                transform: scale(1, 1); 
+                opacity: 1;
+            }
+            50% { 
+                transform: scale(1.05, 0.95); 
+                opacity: 1;
+            }
+            30%, 70%, 40%, 60% { 
+                transform: scale(0.95, 1.05); 
+                opacity: 1;
+            }
+            20%, 80% { 
+                transform: scale(1.15, 0.85); 
+                opacity: 1;
+            }
+            10%, 90% { 
+                transform: scale(0.75, 1.25); 
+                opacity: 1;
+            }
+            5%, 95% { 
+                transform: scale(1.25, 0.75); 
+                opacity: 1;
+            }
+            100% { 
+                opacity: 0;
+            }
+        }
+
         .rotateInY {
             animation: rotateInY ${inDuration}ms forwards;
         }
@@ -114,15 +197,87 @@ const TextRotation = ({
         .rotateOutZ {
             animation: rotateOutZ ${outDuration}ms forwards;
         }
+        
+        .slideInLeft {
+            animation: slideInLeft ${inDuration}ms forwards;
+        }
+
+        .slideOutLeft {
+            animation: slideOutLeft ${outDuration}ms forwards;
+        }
+        
+        .slideInRight {
+            animation: slideInRight ${inDuration}ms forwards;
+        }
+
+        .slideOutRight {
+            animation: slideOutRight ${outDuration}ms forwards;
+        }
+        
+        .slideInUp {
+            animation: slideInUp ${inDuration}ms forwards;
+        }
+
+        .slideOutUp {
+            animation: slideOutUp ${outDuration}ms forwards;
+        }
+        
+        .slideInDown {
+            animation: slideInDown ${inDuration}ms forwards;
+        }
+
+        .slideOutDown {
+            animation: slideOutDown ${outDuration}ms forwards;
+        }
+
+        .jelloIn {
+            animation: jelloIn ${inDuration}ms forwards;
+        }
+
+        .jelloOut {
+            animation: jelloOut ${outDuration}ms forwards;
+        }
     `}
       </style>
       <div
-        className={animationClass}
         style={{
           display: "inline-block",
+          overflow: [
+            "slideInLeft",
+            "slideOutLeft",
+            "slideInRight",
+            "slideOutRight",
+            "slideInUp",
+            "slideOutUp",
+            "slideInDown",
+            "slideOutDown",
+          ].includes(animationClass)
+            ? "hidden"
+            : "visible",
+          verticalAlign: [
+            "slideInLeft",
+            "slideOutLeft",
+            "slideInRight",
+            "slideOutRight",
+            "slideInUp",
+            "slideOutUp",
+            "slideInDown",
+            "slideOutDown",
+          ].includes(animationClass)
+            ? "bottom"
+            : "baseline",
+          width: "auto",
         }}
       >
-        {text}
+        <div
+          className={animationClass}
+          style={{
+            display: "inline-block",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {text}
+        </div>
       </div>
     </>
   );
