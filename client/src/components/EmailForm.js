@@ -10,10 +10,12 @@ import Col from "react-bootstrap/Col";
 
 // bootstrap icons
 import {
-  ClipboardFill,
-  ClipboardCheckFill,
+  // ClipboardFill,
+  // ClipboardCheckFill,
   EnvelopeFill,
 } from "react-bootstrap-icons";
+
+import CopyButton from "./CopyButton";
 
 const EmailForm = () => {
   const [formData, setFormData] = useState({
@@ -22,19 +24,19 @@ const EmailForm = () => {
     emailBody: "Hello Gabe, I would like to connect!",
   });
 
-  const [copyToggle, setCopyToggle] = useState(false);
+  // const [copyToggle, setCopyToggle] = useState(false);
 
-  const handleCopy = (event) => {
-    if (event.target.name === "copyEmailTo") {
-      navigator.clipboard.writeText(formData.emailTo);
-    }
+  // const handleCopy = (event) => {
+  //   if (event.target.name === "copyEmailTo") {
+  //     navigator.clipboard.writeText(formData.emailTo);
+  //   }
 
-    setCopyToggle(true);
+  //   setCopyToggle(true);
 
-    setTimeout(() => {
-      setCopyToggle(false);
-    }, 2000);
-  };
+  //   setTimeout(() => {
+  //     setCopyToggle(false);
+  //   }, 2000);
+  // };
 
   const handleFormChange = (event) => {
     setFormData({
@@ -74,7 +76,8 @@ const EmailForm = () => {
               readOnly
               disabled
             />
-            <Button
+            <CopyButton copyText={formData.emailTo} />
+            {/* <Button
               variant={copyToggle ? "success" : "dark"}
               id="button-addon2"
               className="d-flex align-items-center focus-ring"
@@ -92,7 +95,7 @@ const EmailForm = () => {
                   }}
                 />
               )}
-            </Button>
+            </Button> */}
           </InputGroup>
           <Form.Group className="mb-3" controlId="emailSubject">
             <Form.Label>Subject:</Form.Label>

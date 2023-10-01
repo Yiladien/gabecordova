@@ -31,7 +31,7 @@ function App() {
             // }}
           >
             <Row className="justify-content-center">
-              <Col xxl={6} lg={8} md={10} sm={12}>
+              <Col xxl={8} lg={10} md={12} sm={12}>
                 <Routes>
                   <Route exact path="/" element={<About />} />
                   <Route exact path="/portfolio" element={<Portfolio />} />
