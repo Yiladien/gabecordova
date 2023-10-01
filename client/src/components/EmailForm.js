@@ -136,6 +136,7 @@ const EmailForm = () => {
               <Button
                 variant="dark"
                 name="clear"
+                className="focus-ring"
                 onClick={handleFormClear}
                 disabled={
                   formData.emailSubject === "" && formData.emailBody === ""
@@ -150,6 +151,7 @@ const EmailForm = () => {
               <Button
                 variant="success"
                 name="create"
+                className="focus-ring"
                 href={`mailto:${formData.emailTo}?subject=${encodeURIComponent(
                   formData.emailSubject
                 )}&body=${encodeURIComponent(formData.emailBody)}`}
