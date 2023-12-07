@@ -20,12 +20,12 @@ import CopyButton from "../components/CopyButton";
 
 const Contact = () => {
   const introWordList = [
-    "Connect",
-    "Chat",
-    "Code",
-    "Build",
-    "Innovate",
-    "Create",
+    "Connect!",
+    "Chat!",
+    "Code!",
+    "Build!",
+    "Innovate!",
+    "Create!",
   ];
 
   return (
@@ -36,7 +36,7 @@ const Contact = () => {
         //   boxShadow: "inset 0px 0px 0px 1px white",
         // }}
       >
-        <h1 className="mb-3 text-light">
+        <h1 className="mb-3 text-light display-4">
           Let's{" "}
           <TextRotation
             // required prop: textList as []

@@ -38,7 +38,7 @@ const About = () => {
                 </div>
               </Col>
               <Col>
-                <h1>Gabe Cordova</h1>
+                <h1 className="display-4">Gabe Cordova</h1>
                 <h4 className="fst-italic">Full Stack Web Developer</h4>
               </Col>
             </Row>
@@ -51,21 +51,12 @@ const About = () => {
               portfolio. My name is Gabriel "Gabe" Cordova and I am a full stack
               web developer trained in a variety of web technologies. This
               website will showcase my creations and provide you a list of my
-              skillsets. I am naturally curious and love to problem solve and
-              learn. Keep visiting to see my portfolio grow and what new skills
-              I will add.
+              skillsets.
             </p>
+            <p>I am naturally curious and love to learn and problem solve.</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit aut nemo ullam vitae maiores quaerat assumenda earum
-              officiis soluta sint necessitatibus fuga impedit, cupiditate
-              perferendis itaque quibusdam repellendus. Recusandae, nam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit aut nemo ullam vitae maiores quaerat assumenda earum
-              officiis soluta sint necessitatibus fuga impedit, cupiditate
-              perferendis itaque quibusdam repellendus. Recusandae, nam.
+              Keep visiting to see my portfolio grow and what new skills I will
+              add.
             </p>
           </Card.Body>
         </Card>
